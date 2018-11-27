@@ -7,3 +7,5 @@ As an incoming call is received the extension will automatically populdate the C
 
 
 ![](readme-images/example1.png)
+
+Installing a Chrome extension is very simple and explained [here](https://developer.chrome.com/extensions/getstarted). 
