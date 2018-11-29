@@ -7,13 +7,18 @@
     "default_title": "Fetch Contact Id"
   },
   "permissions": [
-    "contentSettings"
+    "contentSettings",
+    "activeTab"
   ],
-  "web_accessible_resources": ["script.js", "contentScript.js"],
+  "background" : {
+    "scripts" : ["backgroundScript.js"]
+  },  
+  "web_accessible_resources": ["script.js", "contentScript.js", "testScript"],
   "content_scripts": [
     {
       "matches": [
-        "*://*.awsapps.com/*"
+        "*://*.awsapps.com/connect/ccp*",
+        "*://*.ring.kustomerapp.com/*"
       ],
       "js": [
         "contentScript.js"
