@@ -17,8 +17,7 @@
   "content_scripts": [
     {
       "matches": [
-        "*://*.awsapps.com/connect/ccp*",
-        "*://*.ring.kustomerapp.com/*"
+        "*://*.awsapps.com/connect/ccp*"
       ],
       "js": [
         "contentScript.js"
